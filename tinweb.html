@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e9" />
+    <meta
+      name="description"
+      content="TinWeb：一个从网页基础开始的个人创作空间。"
+    />
+    <title>TinWeb — 从这里开始</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, "PingFang SC", "Hiragino Sans GB", sans-serif;
+        color: #20231f;
+        background: #f5f1e9;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .page {
+        width: min(1120px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 0;
+        border-bottom: 1px solid #d9d4ca;
+      }
+
+      .brand {
+        color: inherit;
+        font-size: 1.15rem;
+        font-weight: 750;
+        letter-spacing: -0.06em;
+        text-decoration: none;
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+      }
+
+      nav a {
+        color: #555a51;
+        font-size: 0.9rem;
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        color: #d45c3b;
+      }
+
+      main {
+        padding: clamp(72px, 14vw, 150px) 0 110px;
+      }
+
+      .eyebrow {
+        color: #d45c3b;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 22px 0;
+        font-size: clamp(3.5rem, 10vw, 7.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.085em;
+      }
+
+      .intro {
+        max-width: 560px;
+        color: #62665e;
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        line-height: 1.8;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        margin-top: 24px;
+        padding: 0 20px;
+        border-radius: 999px;
+        background: #20231f;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 650;
+        text-decoration: none;
+        transition: transform 160ms ease, background 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        background: #d45c3b;
+      }
+
+      .note {
+        margin-top: 88px;
+        padding-top: 20px;
+        border-top: 1px solid #d9d4ca;
+        color: #77796f;
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 520px) {
+        .page {
+          width: min(100% - 32px, 1120px);
+        }
+
+        nav {
+          gap: 14px;
+        }
+
+        nav a {
+          font-size: 0.82rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="#top" aria-label="TinWeb 首页">TINWEB.</a>
+        <nav aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#start">开始</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <p class="eyebrow">你的网页创作空间</p>
+        <h1>你好，<br />这里是 TinWeb。</h1>
+        <p class="intro" id="about">
+          从一个简单的 HTML 页面开始，慢慢加入颜色、布局和自己的想法。这个页面就是你的第一个起点。
+        </p>
+        <a class="button" id="start" href="https://developer.mozilla.org/zh-CN/docs/Learn_web_development"
+          >开始学习 Web <span aria-hidden="true">&nbsp;↗</span></a
+        >
+        <p class="note">用 HTML 搭建 · 用 CSS 设计 · 用创意表达</p>
+      </main>
+    </div>
+  </body>
+</html>
